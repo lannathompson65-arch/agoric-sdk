@@ -70,7 +70,6 @@ queue_rules:
     merge_conditions: *merge-conditions
     merge_method: merge
     update_method: rebase
-    autosquash: true
 
   - name: merge
     commit_message_template: *commit-message-template
@@ -113,5 +112,4 @@ pull_request_rules:
           - check-failure=no-fixup-commits
       - -draft
     actions:
-      rebase:
-        autosquash: true
+      rebase: {}
